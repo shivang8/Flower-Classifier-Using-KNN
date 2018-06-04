@@ -5,9 +5,9 @@ def preprocess(path):
 	with open(path,'r') as readFile:
 		for row in csv.reader(readFile):
 			dataset.append(row)
-	#	Iris-setosa
-	#	Iris-versicolor
-	#	Iris-virginica
+	#	Iris-setosa		-	0
+	#	Iris-versicolor	-	1
+	#	Iris-virginica	-	2
 	for i in dataset:
 		i[0] = float(i[0])
 		i[1] = float(i[1])
@@ -21,7 +21,7 @@ def preprocess(path):
 			i[4] = 2
 
 	count = 1
-	with open('iris_train.csv','wb') as train, open('iris_test.csv','wb') as test:
+	with open('train.csv','wb') as train, open('test.csv','wb') as test:
 		writer_test = csv.writer(test)
 		writer_train = csv.writer(train)
 		for i in dataset:
