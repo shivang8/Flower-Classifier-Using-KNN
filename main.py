@@ -62,12 +62,14 @@ def main():
 				data[label] += 1
 			else:
 				data[label] = 1
-		predicted_value = sorted(data, key=data.get)
+		#print data,
+		predicted_value = sorted(data, key=data.get, reverse=True)
 		predicted_value = predicted_value[0]
+		#print predicted_value, actual_value
 		if actual_value == predicted_value:
 			correct_prediction += 1
 		total_prediction += 1
-	print "Accuracy = %f"%((float(correct_prediction)/total_prediction)*100)
+	print "For k = %d; Accuracy = %f"%(k,(float(correct_prediction)/total_prediction)*100)
 
 
 
