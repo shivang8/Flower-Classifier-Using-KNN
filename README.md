@@ -1,1 +1,6 @@
 # Flower Classifier Using KNN
+
+
+**IF YOU ENCOUNTER ANY BUGS OR FOR ANY SUGGESTIONS REGARDING THE IMPROVEMENT OF THE DIGIT RECOGNIZER FEEL FREE TO CONTACT ME :**
+
+Shivang Srivastava	-	shivang.8@geu.ac.in<br/>
